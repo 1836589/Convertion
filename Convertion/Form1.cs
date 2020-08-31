@@ -4,17 +4,30 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Convertion
 {
-    public partial class Form1 : Form
+    public partial class frmConversion : Form
     {
-        public Form1()
+        int m_ValeurConvertie;
+        public frmConversion()
         {
             InitializeComponent();
+            m_ValeurConvertie = Convert.ToInt32(txtValeur.Text);
+
+            void ConversionBinaire()
+            {
+
+            }
+        }
+
+        private void btnBinaire_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
